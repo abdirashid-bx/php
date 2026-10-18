@@ -1,103 +1,208 @@
-Web Application Development - PHP & MySQL
-Course Information
-Course Title: Web Application Development - PHP & MySQL
-Faculty: Computer & Information Technology
-My Prerequisites:
-HTML & CSS
-Programming Fundamentals
-JavaScript
-My Instructor: Yahye Ali Isse
-Course Overview & My Expectations
-In this course, I will learn to build dynamic, database-driven web applications using PHP and MySQL.
+# Web Application Development — PHP & MySQL
 
-Throughout the term, I will cover server-side programming, web form processing, database design, SQL operations, AJAX-based interactions, REST API development, application security, MVC architecture, and the fundamentals of the Laravel framework.
+## 📚 Course Information
 
-I will apply theoretical concepts through hands-on coding exercises and ultimately build and deploy a complete PHP & MySQL web application for my final project.
+- **Course Title:** Web Application Development — PHP & MySQL
+- **Faculty:** Computer & Information Technology
+- **Instructor:** Yahye Ali Isse
+- **Reference Book:** *Learning PHP, MySQL & JavaScript*
+- **Author:** Robin Nixon
+- **Publisher:** O'Reilly Media
+- **Edition:** 6th Edition (2018)
 
-What I Will Accomplish (Course Objectives)
-By the end of this course, I will be able to:
+## 🎯 Course Overview
 
-Set up and navigate PHP/MySQL development environments.
-Write dynamic and interactive web pages using PHP syntax, data types, control structures, and reusable components.
-Design, process, and validate HTML web forms on both the client and server sides.
-Create dynamic frontend interactions using jQuery, AJAX, and JSON.
-Design relational databases in MySQL and execute SQL operations including SELECT, INSERT, UPDATE, DELETE, CREATE, and JOIN.
-Securely connect my PHP application to a MySQL database to construct full CRUD functionality.
-Develop and consume RESTful APIs using PHP and JSON.
-Implement user authentication, authorization, session management, and password hashing.
-Apply modern software patterns using MVC architecture and structural conventions in Laravel.
-Deliver a production-ready, database-driven web project.
-My Tech Stack & Tools
-Frontend
-HTML5
-CSS3
-JavaScript
-jQuery
-AJAX
-JSON
-Backend
-PHP
-Laravel Framework
-Database
-MySQL
-SQL
-Development Tools
-Visual Studio Code
-XAMPP
-phpMyAdmin
-Git & GitHub
-Course Schedule & Modules
-Module 1: Introduction to PHP & MySQL
-Duration: 1 Week
-Topics: Web application fundamentals, client-server architecture, local environment setup, basic PHP syntax, and execution.
-Module 2: PHP Fundamentals & Control Structures
-Duration: 1 Week
-Topics: Variables, data types, operators, conditional statements, loops, and basic logic.
-Module 3: Arrays, Functions & Reusable Code
-Duration: 2 Weeks
-Topics: Indexed, associative, and multidimensional arrays; custom functions; scope; standard library functions; modular layout inclusion (include/require).
-Module 4: Web Forms & Data Validation
-Duration: 2 Weeks
-Topics: Handling GET and POST request data, server-side data validation, input sanitization, error handling, and form processing workflows.
-Module 5: Interactive Applications with jQuery & AJAX
-Duration: 2 Weeks
-Topics: jQuery basics, sending asynchronous requests with AJAX, serializing JSON data, and updating dynamic UI elements without page reloads.
-Module 6: Relational Database Design with MySQL
-Duration: 2 Weeks
-Topics: Relational database design principles, schema creation, SQL queries, table relationships, PDO database integration, and building database CRUD operations.
-Module 7: Building REST APIs
-Duration: 2 Weeks
-Topics: REST architectural patterns, HTTP request methods (GET, POST, PUT, DELETE), building custom API endpoints in PHP, parsing JSON payloads, and API consumption.
-Module 8: Security, Sessions & Authentication
-Duration: 1 Week
-Topics: Cookie management, session storage, authentication state, role-based access control, secure password hashing, protection against common web vulnerabilities, and general performance tweaks.
-Module 9: MVC Architecture & Modern PHP
-Duration: 1 Week
-Topics: Separation of concerns using Model-View-Controller architecture, application routing, and organizing production-ready PHP projects.
-Module 10: Introduction to Laravel Framework
-Duration: 2 Weeks
-Topics: Laravel initialization, environment configuration, routing, controllers, Blade templating system, database migrations, and Eloquent ORM.
-##🚀 My Final Project Plan
+This repository documents my learning journey in **Web Application Development using PHP and MySQL**. Throughout this course, I will learn to build dynamic, interactive, and database-driven web applications using modern web development practices.
 
-I am required to design, develop, and present an original, full-stack database-driven web application.
+The course covers server-side programming, form processing, relational database design, AJAX interactions, RESTful API development, web application security, MVC architecture, and the fundamentals of the Laravel framework.
 
-Project Ideas:
-Learning Management System
-Hospital Management System
-E-Commerce Platform
-Inventory Management System
-Student Management System
-Online Booking System
-Project Requirements:
-Secure user registration and login system
-Custom relational database schema
-Full CRUD operations
-Robust client-side and server-side validation
-Clean, responsive UI design
-Basic security measures applied
-Project documentation and technical overview
-Assigned Reading
-Title: Learning PHP, MySQL & JavaScript
-Author: Robin Nixon
-Publisher: O'Reilly Media Inc.
-Edition: 6th Edition (2018)
+I will apply these concepts through practical coding exercises, assignments, and a final full-stack web application project.
+
+## ✅ Course Objectives
+
+By the end of this course, I aim to:
+
+- Set up and configure PHP and MySQL development environments.
+- Understand PHP syntax, variables, data types, functions, arrays, and control structures.
+- Process and validate HTML forms using GET and POST requests.
+- Build interactive web interfaces using JavaScript, jQuery, AJAX, and JSON.
+- Design relational databases and perform SQL operations.
+- Implement full CRUD functionality using PHP and MySQL.
+- Connect PHP applications to MySQL securely using PDO.
+- Develop and consume RESTful APIs.
+- Implement authentication, authorization, sessions, and password hashing.
+- Apply MVC architecture and organize maintainable applications.
+- Understand Laravel routing, controllers, Blade templates, migrations, and Eloquent ORM.
+- Build, document, and deploy a complete database-driven web application.
+
+## 🛠️ Technologies & Tools
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+- jQuery
+- AJAX
+- JSON
+
+### Backend
+- PHP
+- Laravel
+
+### Database
+- MySQL
+- SQL
+
+### Development Tools
+- Visual Studio Code
+- XAMPP
+- phpMyAdmin
+- Git
+- GitHub
+
+## 📖 Course Modules
+
+| Module | Topic | Duration |
+|---|---|---|
+| 01 | Introduction to PHP & MySQL | 1 Week |
+| 02 | PHP Fundamentals & Control Structures | 1 Week |
+| 03 | Arrays, Functions & Reusable Code | 2 Weeks |
+| 04 | Web Forms & Data Validation | 2 Weeks |
+| 05 | Interactive Applications with jQuery & AJAX | 2 Weeks |
+| 06 | Relational Database Design with MySQL | 2 Weeks |
+| 07 | Building REST APIs | 2 Weeks |
+| 08 | Security, Sessions & Authentication | 1 Week |
+| 09 | MVC Architecture & Modern PHP | 1 Week |
+| 10 | Introduction to Laravel Framework | 2 Weeks |
+
+### Module Details
+
+**Module 1: Introduction to PHP & MySQL**
+- Web application fundamentals
+- Client-server architecture
+- Local development environment setup
+- PHP syntax and execution
+
+**Module 2: PHP Fundamentals & Control Structures**
+- Variables and data types
+- Operators and expressions
+- Conditional statements
+- Loops and programming logic
+
+**Module 3: Arrays, Functions & Reusable Code**
+- Indexed, associative, and multidimensional arrays
+- Custom functions and variable scope
+- Built-in PHP functions
+- `include` and `require`
+
+**Module 4: Web Forms & Data Validation**
+- GET and POST requests
+- Server-side form processing
+- Input validation and sanitization
+- Error handling
+
+**Module 5: Interactive Applications with jQuery & AJAX**
+- jQuery fundamentals
+- Asynchronous HTTP requests
+- JSON data handling
+- Updating page content without reloading
+
+**Module 6: Relational Database Design with MySQL**
+- Relational database design
+- Tables, primary keys, and foreign keys
+- SQL queries and JOIN operations
+- PDO database connections
+- Create, Read, Update, and Delete (CRUD)
+
+**Module 7: Building REST APIs**
+- REST architectural principles
+- HTTP methods: GET, POST, PUT, and DELETE
+- API endpoints and JSON payloads
+- API requests and responses
+
+**Module 8: Security, Sessions & Authentication**
+- Cookies and PHP sessions
+- User authentication and authorization
+- Role-based access control
+- Secure password hashing
+- Protection against common web vulnerabilities
+
+**Module 9: MVC Architecture & Modern PHP**
+- Model-View-Controller architecture
+- Separation of concerns
+- Application routing
+- Maintainable project structure
+
+**Module 10: Introduction to Laravel Framework**
+- Laravel installation and configuration
+- Routing and controllers
+- Blade templating
+- Database migrations
+- Eloquent ORM
+
+## 🚀 Final Project
+
+For the final assessment, I will design, develop, document, and present an original full-stack web application backed by a relational database.
+
+### Possible Project Ideas
+
+- Learning Management System
+- Hospital Management System
+- E-Commerce Platform
+- Inventory Management System
+- Student Management System
+- Online Booking System
+
+### Project Requirements
+
+The final application is expected to include:
+
+- Secure user registration and login
+- A custom relational database schema
+- Complete CRUD functionality
+- Client-side and server-side validation
+- A clean, responsive user interface
+- Basic application security measures
+- Project documentation and technical overview
+- Deployment of the completed application
+
+## 📂 Repository Structure
+
+The repository will be organized as the course progresses. A possible structure is:
+
+```text
+php-mysql-course/
+├── module-01-introduction/
+├── module-02-php-fundamentals/
+├── module-03-arrays-functions/
+├── module-04-forms-validation/
+├── module-05-jquery-ajax/
+├── module-06-mysql-database/
+├── module-07-rest-api/
+├── module-08-security-authentication/
+├── module-09-mvc-architecture/
+├── module-10-laravel/
+├── final-project/
+└── README.md
+```
+
+## 📚 Assigned Reading
+
+**Learning PHP, MySQL & JavaScript: With jQuery, CSS & HTML5**
+
+- **Author:** Robin Nixon
+- **Publisher:** O'Reilly Media, Inc.
+- **Edition:** 6th Edition
+- **Publication Year:** 2018
+
+## 🎓 Learning Goals
+
+My goal is to strengthen my backend development skills, understand how frontend applications communicate with servers and databases, and gain practical experience building secure, maintainable, and database-driven web applications.
+
+This repository will serve as a record of my coursework, practical exercises, assignments, and final project throughout the semester.
+
+---
+
+**Course:** Web Application Development — PHP & MySQL  
+**Instructor:** Yahye Ali Isse  
+**Faculty:** Computer & Information Technology
