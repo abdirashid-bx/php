@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0fdf4;
+            color: #166534;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #15803d;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        form {
+            background: #ffffff;
+            width: 100%;
+            max-width: 760px;
+            padding: 25px 30px;
+            border-radius: 14px;
+            border: 1px solid #bbf7d0;
+            box-shadow: 0 8px 25px rgba(22, 101, 52, 0.10);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 20px;
+        }
+
+        h2 {
+            grid-column: 1 / -1;
+            margin-top: 0;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #166534;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            min-width: 0;
+            margin-top: 6px;
+            padding: 10px;
+            border: 1px solid #bbf7d0;
+            border-radius: 7px;
+            background: #ffffff;
+            color: #14532d;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus,
+        select:focus {
+            border-color: #16a34a;
+            box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
+        }
+
+        input[type="radio"] {
+            accent-color: #16a34a;
+            margin-right: 5px;
+        }
+
+        input[type="radio"] + label {
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        form > label,
+        form > input[type="text"],
+        form > select,
+        form > input[type="number"],
+        form > input[type="file"] {
+            grid-column: auto;
+        }
+
+        form > br {
+            display: none;
+        }
+
+        label[for="fullname"],
+        label[for="employee_id"],
+        label[for="department"],
+        label[for="basic_salary"],
+        label[for="allowance"],
+        label[for="deduction"],
+        label[for="document"] {
+            align-self: end;
+        }
+
+        button {
+            padding: 11px 16px;
+            border: none;
+            border-radius: 7px;
+            background: #16a34a;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        button:hover {
+            background: #15803d;
+            transform: translateY(-1px);
+        }
+
+        button[type="reset"] {
+            background: #ffffff;
+            color: #15803d;
+            border: 1px solid #16a34a;
+        }
+
+        button[type="reset"]:hover {
+            background: #f0fdf4;
+        }
+
+        button[type="submit"],
+        button[type="reset"] {
+            width: 100%;
+        }
+
+        form {
+            column-gap: 20px;
+        }
+
+        form > button {
+            margin-top: 5px;
+        }
+
+        input[type="hidden"] {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+                align-items: flex-start;
+            }
+
+            form {
+                grid-template-columns: 1fr;
+                gap: 8px;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 22px;
+                margin-bottom: 12px;
+            }
+
+            input[type="text"],
+            input[type="number"],
+            select,
+            input[type="file"] {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+   
+
+    <form action="process.php" method="POST"
+          enctype="multipart/form-data">
+      <h2>Employee Registration Form</h2>
+        <!-- Employee name -->
+        <label for="fullname">Employee Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+        <br><br>
+
+        <!-- Employee ID -->
+        <label for="employee_id">Employee ID:</label>
+        <input type="text" id="employee_id" name="employee_id">
+        <br><br>
+
+        <!-- Gender selection -->
+        Gender:
+          
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Department selection -->
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="">-- Select Department --</option>
+            <option value="Human Resources">Human Resources</option>
+            <option value="Finance">Finance</option>
+            <option value="Information Technology">
+                Information Technology
+            </option>
+            <option value="Administration">Administration</option>
+        </select>
+        <br><br>
+
+        <!-- Salary information -->
+        <label for="basic_salary">Basic Salary:</label>
+        <input type="number" id="basic_salary" name="basic_salary"
+               step="0.01">
+        <br><br>
+
+        <label for="allowance">Allowance:</label>
+        <input type="number" id="allowance" name="allowance"
+               step="0.01">
+        <br><br>
+
+        <label for="deduction">Deduction:</label>
+        <input type="number" id="deduction" name="deduction"
+               step="0.01">
+        <br><br>
+
+        <!-- File upload -->
+        <label for="document">Employee Document:</label>
+        <input type="file" id="document" name="document">
+        <br><br>
+
+        
+        <input type="hidden" name="MAX_FILE_SIZE" value="2097152">
+
+        <button type="submit">Register and Calculate</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>

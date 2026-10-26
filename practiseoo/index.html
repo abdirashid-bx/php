@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Account Management</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 500px;
+            max-width: 95%;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #173b67;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-top: 10px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        input[type="submit"] {
+            background-color: #173b67;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Banking Account Form</h1>
+
+        <form action="process.php" method="POST"
+              enctype="multipart/form-data">
+
+            <label>Customer Full Name:</label>
+            <input type="text" name="fullname">
+
+            <label>Account Number:</label>
+            <input type="text" name="accountnumber">
+
+            <label>Gender:</label>
+
+            <input type="radio" name="gender" value="Male"> Male
+
+            <input type="radio" name="gender" value="Female"> Female
+
+            <label>Account Type:</label>
+
+            <select name="accounttype">
+                <option value="">Select Account Type</option>
+                <option value="Savings">Savings</option>
+                <option value="Current">Current</option>
+                <option value="Business">Business</option>
+            </select>
+
+            <label>Opening Balance ($):</label>
+            <input type="number" name="openingbalance" step="any">
+
+            <label>Transaction Type:</label>
+
+            <input type="radio" name="transactiontype" value="Deposit">
+            Deposit
+
+            <input type="radio" name="transactiontype" value="Withdrawal">
+            Withdrawal
+
+            <label>Transaction Amount ($):</label>
+            <input type="number" name="transactionamount" step="any">
+
+            <label>Account Duration (Years):</label>
+            <input type="number" name="duration" step="1">
+
+            <label>Identification Document:</label>
+            <input type="file" name="document">
+
+            <div class="buttons">
+
+                <input type="submit" value="Process Transaction">
+
+                <input type="reset" value="Reset">
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
